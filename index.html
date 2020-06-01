@@ -36,9 +36,9 @@
     position: absolute;
     top: 334px;
     font-size: 20px;
-    left: 350px;
+    left: 340px;
     height: 60px;
-    width: 130px;
+    width: 150px;
 }
 
 #headline {
@@ -83,7 +83,7 @@
     top: 350px;
     width: 150px;
     font-size: 20px;
-    height: 60px;
+    height: 60px;;
     left: 351px;
 }
 
@@ -92,7 +92,7 @@
     top: 250px;
     width: 125px;
     font-size: 20px;
-    height: 60px;
+    height: 60px;;
     left: 600px;
 }
         </style>
@@ -102,7 +102,7 @@
         <div class="menu">
         <button id = "startBtn" onclick="draw()">START</button>
         <button id = "tutorialBtn" onclick="tutorial()">TUTORIAL</button>
-        <button id = "exitBtn" onclick="exit()">EXIT</button>
+        <button id = "exitBtn" onclick="self.close()">LEAVE GAME</button>
         </div>
         <img id = "waltherhead1" src="Waltherhead.png">
         <img id = "waltherhead2" src="Waltherhead.png">
@@ -277,10 +277,6 @@ function tutorial() {
     ctx.lineTo (200, 340);
     ctx.stroke();
     backToMenu2.style.display = "initial";
-}
-
-function exit() {
-    
 }
 
 function draw() {
