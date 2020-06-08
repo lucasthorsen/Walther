@@ -227,6 +227,8 @@ function drawWalther() {
 function gameOver() {
     btm.style.display = "initial";
     ctx.fillStyle = "#000";
+    paused.style.display = "none";
+    Continue.style.display = "none";
     ctx.fillRect (0, 0, c.width, c.height);
     ctx.fillStyle = "#f00";
     ctx.font = "75px Arial"
