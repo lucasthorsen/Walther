@@ -95,6 +95,25 @@
     height: 60px;;
     left: 600px;
 }
+
+#backToMenuPause {
+    position: absolute;
+    top: 265px;
+    width: 125px;
+    font-size: 20px;
+    height: 60px;
+    left: 363px;
+}
+
+#zoomIn {
+   font-size: 23.5px;
+
+}
+
+#zoomOut {
+   font-size: 23.5px;
+
+}
         </style>
     </head>
     <body>
@@ -109,8 +128,11 @@
         <h1 id = "headline">Walther game</h1>
         <button id = "backToMenu" onclick="refresh()">Back to menu</button>
         <button id = "backToMenu2" onclick="refresh()">Back to menu</button>
+        <button id = "backToMenuPause" onclick="refresh()">Back to menu</button>
         <h1 id = "pause">PAUSED!</h1>
         <p id="continue">Press the space bar to continue the game.</p>
+        <p id = "zoomIn">Hold the ctrl key and press the + key to zoom in</p>
+        <p id = "zoomOut">Hold the ctrl key and press the - key to zoom out</p>
         <script>
 var c = document.getElementById ("gameScreen");
 var ctx = c.getContext ("2d");
@@ -148,6 +170,7 @@ paused.style.display = "none";
 Continue.style.display = "none";
 btm.style.display = "none";
 backToMenu2.style.display = "none";
+backToMenuPause.style.display = "none";
 
 
 window.onload = function() {
@@ -204,6 +227,7 @@ function pause() {
     dy = 0;
     paused.style.display = "initial";
     Continue.style.display = "initial";
+    backToMenuPause.style.display = "initial";
     bark.remove();
 }
 
@@ -213,6 +237,7 @@ function notPaused() {
     waltherheadDx = 8;
     paused.style.display = "none";
     Continue.style.display = "none";
+    backToMenuPause.style.display = "none";
 }
 
 function rain() {
@@ -227,8 +252,6 @@ function drawWalther() {
 function gameOver() {
     btm.style.display = "initial";
     ctx.fillStyle = "#000";
-    paused.style.display = "none";
-    Continue.style.display = "none";
     ctx.fillRect (0, 0, c.width, c.height);
     ctx.fillStyle = "#f00";
     ctx.font = "75px Arial"
@@ -253,8 +276,6 @@ function tutorial() {
     headline.style.display = "none";
     waltherhead1.style.display = "none";
     waltherhead2.style.display = "none";
-    paused.style.display = "none";
-    Continue.style.display = "none";
     drawWalther();
     Score();
     Lives();
@@ -282,6 +303,7 @@ function tutorial() {
     ctx.stroke();
     backToMenu2.style.display = "initial";
 }
+
 
 function draw() {
     drawWalther();
@@ -330,6 +352,7 @@ function draw() {
     y += dy;
     
     requestAnimationFrame(draw);
-} </script>
+} 
+</script>
     </body>
 </html>
