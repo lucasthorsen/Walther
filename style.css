@@ -1,0 +1,112 @@
+#gameScreen {
+    background-image:url(Gamebackground.JPG);
+    background-size: cover;
+    margin: -8px;
+    border: 0px solid black;
+}
+
+.menu {
+    position: absolute;
+    top: -47px;
+}
+
+#startBtn {
+    position: absolute;
+    height: 60px;
+    width: 130px;
+    top: 200px;
+    font-size: 20px;
+    left: 350px;
+}
+
+#tutorialBtn {
+    position: absolute;
+    font-size: 20px;
+    top: 267px;
+    left: 325px;
+    width: 180px;
+    height: 60px;
+}
+
+#exitBtn {
+    position: absolute;
+    top: 334px;
+    font-size: 20px;
+    left: 340px;
+    height: 60px;
+    width: 150px;
+}
+
+#headline {
+    position: absolute;
+    font-size: 45px;
+    top: 7px;
+    left: 273px;
+}
+
+#waltherhead1 {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    top: -45px;
+    left: 100px;
+}
+
+#waltherhead2 {
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    top: -45px;
+    left: 530px;
+}
+
+#pause {
+    position: absolute;
+    top: 115px;
+    left: 330px;
+    font-size: 45px;
+}
+
+#continue {
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    font-size: 25px;
+}
+
+#backToMenu {
+    position: absolute;
+    top: 350px;
+    width: 150px;
+    font-size: 20px;
+    height: 60px;;
+    left: 351px;
+}
+
+#backToMenu2 {
+    position: absolute;
+    top: 250px;
+    width: 125px;
+    font-size: 20px;
+    height: 60px;;
+    left: 600px;
+}
+
+#backToMenuPause {
+    position: absolute;
+    top: 265px;
+    width: 125px;
+    font-size: 20px;
+    height: 60px;
+    left: 363px;
+}
+
+#zoomIn {
+   font-size: 23.5px;
+
+}
+
+#zoomOut {
+   font-size: 23.5px;
+
+}
