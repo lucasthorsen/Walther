@@ -58,10 +58,6 @@ function keyUpHandler(event) {
     } else if (event.keyCode == 37) {
         leftPressed = false;
     }
-    else if {
-    leftPressed = false;
-    rightPressed = false;
-    }
 }
 
 function keyDownHandler(event) {
@@ -69,11 +65,6 @@ function keyDownHandler(event) {
         rightPressed = true;
     } else if (event.keyCode == 37) {
         leftPressed = true;
-    }
-    
-    else if {
-    leftPressed = false;
-    rightPressed = false;
     }
     
     if (event.keyCode == 66) {
@@ -87,6 +78,7 @@ function keyDownHandler(event) {
         notPaused();
     }
 }
+
 document.addEventListener ('keyup', keyUpHandler, false);
 document.addEventListener ('keydown', keyDownHandler, false);
 
