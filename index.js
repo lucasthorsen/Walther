@@ -130,7 +130,7 @@ function gameOver() {
 }
 
 function closeWin() {
-  myWindow.close(); 
+  window.close(); 
 }
 
 function refresh() {
