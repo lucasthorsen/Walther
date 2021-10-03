@@ -129,6 +129,10 @@ function gameOver() {
     dy = 0;
 }
 
+function closeWin() {
+  myWindow.close(); 
+}
+
 function refresh() {
     window.location.reload();
 }
