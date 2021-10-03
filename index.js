@@ -66,13 +66,11 @@ function keyDownHandler(event) {
     } else if (event.keyCode == 37) {
         leftPressed = true;
     }
-    
     if (event.keyCode == 66) {
         bark.play();
     }
     if (event.keyCode == 27) {
-        pause();
-        
+        pause();    
     }
     if (event.keyCode == 32) {
         notPaused();
@@ -218,5 +216,4 @@ function draw() {
     y += dy;
     
     requestAnimationFrame(draw);
-}
 }
