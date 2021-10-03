@@ -58,7 +58,6 @@ function keyUpHandler(event) {
     } else if (event.keyCode == 37) {
         leftPressed = false;
     }
-}
 
 function keyDownHandler(event) {
     if (event.keyCode == 39) {
